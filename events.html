@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Events</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sequi. Minima, asperiores. Ipsam vel
+            inventore eos necessitatibus accusamus aperiam debitis magnam error nesciunt vitae. Voluptas accusantium
+            eaque error? Voluptatibus fugiat odio nobis molestiae veniam, reprehenderit rem excepturi temporibus
+            voluptatem vero necessitatibus, esse voluptate, velit culpa placeat reiciendis minima blanditiis soluta? Rem
+            inventore vel, nesciunt vero iste quibusdam. Nostrum facilis molestias saepe voluptatem reiciendis esse,
+            autem blanditiis sit nihil ut corrupti animi tempora nobis, et doloremque! Enim veniam quas cum, dolores
+            expedita nam amet. Quos incidunt fuga illo ratione quia suscipit alias officia iure. Necessitatibus illum
+            omnis quis odio, provi</p>
+Time ie <span id="time"></span>
+
+        <button id="btn" onclick="toggle()">Show/Hide</button>
+    </div>
+    <script>
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function mouseover() {
+            alert("inside para");
+            para.style.backgroundColor = "red";
+        });
+        para.style.backgroundColor = "white";
+        function toggle() {
+            if (para.style.display != "none") {
+                para.style.display = "none";
+            }
+            else {
+                para.style.display = "block";
+            }
+        }
+        let timeOut = setTimeout(great, 5000, "Aman");
+        function great(name) {
+            console.log("have a good day " + name);
+        }
+        // clearTimeout(timeOut);
+        let iner = setInterval(great, 1000, "aman");
+        clearInterval(iner);
+
+        function time() {
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+setInterval(time, 1000);
+//shortcuts
+array.forEach(element => {//this is function name is element()
+    //do aby thing
+});
+let fun = () => {
+    //do the logic
+}
+    </script>
+</body>
+
+</html>

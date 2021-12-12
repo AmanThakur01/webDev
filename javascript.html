@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<script>
+    let a=12;
+    var b=2;
+    c="aman";
+    d=a+b;
+    var temp = `${c} is a nice developer having roll no. ${a+b}`;
+    var len = c.length;
+    console.log(d);
+    console.log("value of a = "+(++a));
+    console.log("value of b++ = "+(b++));
+    console.log("value of b = "+b);
+    console.log("value of c = "+c);
+    console.log("value of 'temp' = "+temp);
+    console.log("length of c = "+len);
+    var position = temp.indexOf("nice");
+    position = temp.lastIndexOf("nice");
+    console.log(position);
+    
+    position = temp.slice(1,6);
+    console.log(position);
+    var restr=temp.replace('nice','good');
+    console.log(restr);
+    // let is new varable
+    // let a=12;
+    const g=2001;
+
+    function sum(a,b){
+        return a+b;
+    }
+    
+    alert("This is modal");
+
+    let uname = prompt("Enter Your Name","Guest");
+    console.log(uname);
+
+    let deletePost = confirm("Do you really want to Delete?");
+    console.log(deletePost);
+
+    let arr = ['aman','naman','vishal','kritika'];
+    arr.forEach(function f(ele) {
+        console.log(ele+"");
+    })
+let employee = {
+    1:"aman",
+    2:"naman",
+    3:"khushi"
+}
+    for (const iterator of arr) {
+        console.log(iterator);
+    }
+    for (const key in employee) {
+        const element = employee[key];
+        console.log(key+":"+element);
+    }
+
+    let main = document.getElementById('item');
+    console.log(main);
+    let con = document.getElementsByClassName('container');
+    console.log(con);
+    let sel = document.querySelectorAll('container>li');
+    console.log(sel);
+</script>
+<body>
+    <h1>This is javascript</h1>
+    <div class="container">
+        <ul>
+            <li id="item">item-1</li>
+            <li id="item1">item-2</li>
+            <li id="item2">item-3</li>
+            <li id="item3">item-4</li>
+        </ul>
+    </div>
+    <div class="container">
+        this is another class
+    </div>
+</body>
+</html>
