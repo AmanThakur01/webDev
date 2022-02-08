@@ -1,0 +1,29 @@
+{
+  "name": "webdev",
+  "version": "1.0.0",
+  "description": "npm example",
+  "main": "js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmanThakur01/webDev.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "aman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmanThakur01/webDev/issues"
+  },
+  "homepage": "https://github.com/AmanThakur01/webDev#readme",
+  "dependencies": {
+    "body": "^5.1.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.8",
+    "parser": "^0.1.4"
+  }
+}
